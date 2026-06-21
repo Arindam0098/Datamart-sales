@@ -17132,6 +17132,8 @@ VALUES
 
 SELECT * FROM weekly_sales LIMIT 10;
 
+-- Data clean step
+
 create table if not exists clean_weekly_sales as
 select week_date,
 week(week_date) as week_number,
